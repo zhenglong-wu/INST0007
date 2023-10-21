@@ -1,0 +1,16 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* #f8f8ff Ghost White */
+    background-color: #f8f8ff;
+    /* #0b7a75 Pine Green */
+    color: #0b7a75;   
+}
+h1, h2, h3 {
+    color: midnightblue;
+    font-family: "Arial Black";
+    font-weight: bold;
+}
+li {
+    color: #a44a3f; 
+    font-style: italic;
+}

@@ -1,0 +1,29 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* #f8f8ff Ghost White */
+    background-color: #F1F5F2;
+    /* #0b7a75 Pine Green */
+    color: #0b7a75;   
+}
+h1, h2, h3 {
+    color: midnightblue;
+    font-family: "Arial Black";
+    font-weight: bold;
+}
+li {
+    color: #a44a3f; 
+    font-style: italic;
+}
+.academic {
+    color: #b95f89;
+}
+blockquote {
+    font-family: "Palatino Linotype";
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+}
+#link_1 {
+    font-weight: bold;
+}
