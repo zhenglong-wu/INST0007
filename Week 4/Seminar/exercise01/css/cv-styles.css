@@ -1,0 +1,49 @@
+body {
+    font-family: 'PTMono';
+    /* #f8f8ff Ghost White */
+    background-color: #F1F5F2;
+    /* #0b7a75 Pine Green */
+    color: #0b7a75;   
+}
+h1, h2, h3 {
+    color: midnightblue;
+    font-family: "Chakra_Petch";
+    font-weight: bold;
+}
+li {
+    color: #a44a3f; 
+    font-style: italic;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.academic {
+    color: #b95f89;
+}
+blockquote {
+    font-family: "Palatino Linotype";
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+}
+#link_1 {
+    font-weight: bold;
+}
+td {
+    font-family: 'SometypeMono';
+}
+@font-face {
+    font-family: 'Chakra_Petch';
+    font-weight: normal;
+    src: url("../fonts/ChakraPetch-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'PTMono';
+    font-weight: normal;
+    src: url("../fonts/PTMono-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'SometypeMono';
+    font-weight: normal;
+    src: url("../fonts/SometypeMono-VariableFont_wght.ttf") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap')
