@@ -19,7 +19,7 @@ h1 {
 }
 
 .headshotimg {
-    width: 50%;
+    width: 200px;
     height: auto;
 }
 
@@ -28,6 +28,7 @@ h1 {
     display: flex;
     height: 100%;
     margin: 10%;
+    width: 75vw;
 }
 
 ::-webkit-scrollbar { 
@@ -51,12 +52,6 @@ h1 {
     justify-content: space-between;
 }
 
-#sociallinks {
-    display: flex; 
-    flex-direction: row; 
-}
-
-
 .rightpane {
     width: 70%;
     margin-left: 37.5%;
@@ -72,29 +67,9 @@ h1 {
     position: relative;
 }
 
-.circular--portrait { 
-    font: inherit;
-	position: relative; 
-	width: 15vw; 
-	height: 15vw; 
-	overflow: hidden; 
-	border-radius: 50%; 
-} 
-	
-.circular--portrait img { 
-    font: inherit;
-	width: 100%; 
-	height: auto; 
-}
-
-.iconlink {
-    text-decoration: none; /* Optional: removes underline from links */
-}
-
-.iconlinkimg {
-    height: 3vh; /* Adjust the size of the icon */
-    width: auto; /* Adjust the size of the icon */
-    padding-right: 15px;
+#sociallinks {
+    display: flex;
+    flex-direction: row;
 }
 
 .externallink {
@@ -104,3 +79,64 @@ h1 {
     font-style: bold;
 }
 
+.socialicon {
+    height: 30px;
+    width: auto;
+    padding-right: 15px;
+}
+
+.nav {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navlink {
+    font: inherit;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.navlink::before, .navlink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.navlink::before {
+    background-color: #7D9CC0;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.navlink::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    color: #7D9CC0;
+}
+
+.navlink:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+
+.navlink span {
+    display: inline-block;
+}
+
+.navlink:hover span {
+    transform: translate3d(-200%, 0, 0);
+}
