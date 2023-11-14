@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, html {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: inherit;
+    font-weight: 800;
+}
+
+
+.headshot {
+    background-color: none;
+}
+
+.headshotimg {
+    width: 50%;
+    height: auto;
+}
+
+.container {
+    font: inherit;
+    display: flex;
+    height: 100%;
+    margin: 10%;
+}
+
+::-webkit-scrollbar { 
+    display: none;
+}
+
+.leftpane {
+    font: inherit;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+}
+
+#leftpanecontent {
+    max-height: 70vh;
+    font: inherit;
+    margin: 10%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+#sociallinks {
+    display: flex; 
+    flex-direction: row; 
+}
+
+
+.rightpane {
+    width: 70%;
+    margin-left: 37.5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#rightpanecontent {
+    margin: 5%;
+}
+
+#rightpanecv {
+    position: relative;
+}
+
+.circular--portrait { 
+    font: inherit;
+	position: relative; 
+	width: 15vw; 
+	height: 15vw; 
+	overflow: hidden; 
+	border-radius: 50%; 
+} 
+	
+.circular--portrait img { 
+    font: inherit;
+	width: 100%; 
+	height: auto; 
+}
+
+.iconlink {
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.iconlinkimg {
+    height: 3vh; /* Adjust the size of the icon */
+    width: auto; /* Adjust the size of the icon */
+    padding-right: 15px;
+}
+
+.externallink {
+    font: inherit;
+    color: #7D9CC0;
+    text-decoration: none;
+    font-style: bold;
+}
+
