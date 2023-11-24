@@ -5,7 +5,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1 {
@@ -31,9 +31,10 @@ h1 {
     width: 75vw;
 }
 
+/* 
 ::-webkit-scrollbar { 
     display: none;
-}
+} */
 
 .leftpane {
     font: inherit;
@@ -54,6 +55,7 @@ h1 {
 
 .rightpane {
     width: 70%;
+    height: 100vh;
     margin-left: 37.5%;
     overflow-y: scroll;
     overflow-x: hidden;
