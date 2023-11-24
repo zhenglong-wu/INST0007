@@ -5,7 +5,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 h1 {
@@ -53,14 +53,30 @@ h1 {
 }
 
 .rightpane {
+    height: 100%;
     width: 70%;
     margin-left: 37.5%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: auto;
 }
 
-#rightpanecontent {
+.rightpanecontent {
+    padding-top: 50px;
     margin: 5%;
+}
+
+.rightpanecontent::before {
+    content: '';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    height: 125px;
+    right: 0;
+    position: absolute;
+    z-index: 9999999;
+    margin-left: auto;
+    top: 100px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .7) 30%, #fff 40%);
 }
 
 #rightpanecv {
@@ -139,4 +155,23 @@ h1 {
 
 .navlink:hover span {
     transform: translate3d(-200%, 0, 0);
+}
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;      
+    display: inline-block;
+}
+  
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
 }
