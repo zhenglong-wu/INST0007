@@ -5,8 +5,6 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* overflow: hidden; */
-    overflow: scroll;
 }
 
 h1 {
@@ -33,9 +31,9 @@ h1 {
 }
 
 
-::-webkit-scrollbar { 
+/* ::-webkit-scrollbar { 
     display: none;
-}
+} */
 
 .leftpane {
     font: inherit;
@@ -56,15 +54,15 @@ h1 {
 
 .rightpane {
     height: 100%;
-    width: 70%;
+    width: 70vw;
     height: 100vh;
     margin-left: 37.5%;
-    overflow: auto;
 }
 
 .rightpanecontent {
     padding-top: 50px;
     margin: 5%;
+    padding-bottom: 50px;
 }
 
 .rightpanecontent::before {
@@ -72,13 +70,13 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 70%;
-    height: 125px;
+    width: 70vw;
+    height: 250px;
     right: 0;
-    position: absolute;
+    position: fixed;
     z-index: 9999999;
     margin-left: auto;
-    top: 100px;
+    top: 0px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .7) 30%, #fff 40%);
 }
 
@@ -96,6 +94,16 @@ h1 {
     color: #7D9CC0;
     text-decoration: none;
     font-style: bold;
+    box-shadow: inset 0 0 0 0 #7D9CC0;
+    color: #7D9CC0;
+    margin: 0 -.05rem;
+    padding: 0 .05rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.externallink:hover {
+    box-shadow: inset 100px 0 0 0 #7D9CC0;
+    color: white;
 }
 
 .socialicon {
