@@ -2,6 +2,8 @@
 
 :root {
     --themeblue: #474973;
+    --backblue: #0f172a;
+    --text: #92a1b6;
 }
 
 body,
@@ -12,11 +14,15 @@ html {
     padding: 0;
     height: 100%;
     scroll-behavior: smooth;
+    background-color: var(--backblue);
+    color: var(--text);
 }
 
-h1 {
+h1,
+h2 {
     font-family: inherit;
     font-weight: 800;
+    color: white;
 }
 
 
@@ -37,9 +43,9 @@ h1 {
     width: 75vw;
 }
 
-/* ::-webkit-scrollbar { 
+::-webkit-scrollbar { 
     display: none;
-} */
+}
 
 .leftpane {
     font: inherit;
@@ -72,16 +78,6 @@ h1 {
     position: relative;
 }
 
-.rightpanecontent::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    height: 250px;
-    z-index: 3;
-    top: 0;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .7) 30%, #fff 40%);
-}
-
 #rightpanecv {
     position: relative;
 }
@@ -94,7 +90,7 @@ h1 {
 .externallink {
     font: inherit;
     font-weight: bold;
-    color: var(--themeblue);
+    color: white;
     text-decoration: none;
     font-style: bold;
     box-shadow: inset 0 0 0 0 var(--themeblue);
@@ -104,8 +100,8 @@ h1 {
 }
 
 .externallink:hover {
-    box-shadow: inset 150px 0 0 0 var(--themeblue);
-    color: white;
+    box-shadow: inset 150px 0 0 0 white;
+    color: var(--backblue);
 }
 
 .socialicon {
@@ -129,7 +125,6 @@ h1 {
     font: inherit;
     font-size: 20px;
     font-weight: 800;
-    color: #000000;
     padding: 5px;
     text-decoration: none;
     overflow: hidden;
@@ -146,7 +141,7 @@ h1 {
 }
 
 .navlink::before {
-    background-color: black;
+    background-color: white;
     height: 3px;
     bottom: 0;
     transform-origin: 100% 50%;
@@ -160,7 +155,6 @@ h1 {
     top: 0;
     transform-origin: 100% 50%;
     transform: translate3d(200%, 0, 0);
-    color: black;
 }
 
 .navlink:hover::before {
@@ -181,12 +175,12 @@ h1 {
 }
 
 .navlink.active {
-    box-shadow: inset 150px 0 0 0 black;
-    color: white;
+    box-shadow: inset 150px 0 0 0 white;
+    color: black;
 }
 
 .navlink.inactive {
-    color: black
+    color: white
 }
 
 
@@ -230,59 +224,4 @@ h1 {
     100% {
         transform: rotate(0.0deg)
     }
-}
-
-figure {
-    position: sticky;
-    top: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-figure:nth-child(1) img {
-    transform: scale(0.6) rotate(-22.5deg);
-}
-
-figure:nth-child(2) img {
-    transform: scale(0.6) rotate(-15deg);
-}
-
-figure:nth-child(3) img {
-    transform: scale(0.6) rotate(-7.5deg);
-}
-
-figure:nth-child(4) img {
-    transform: scale(0.6) rotate(0deg);
-}
-
-figure:nth-child(5) img {
-    transform: scale(0.6) rotate(7.5deg);
-}
-
-figure:nth-child(6) img {
-    transform: scale(0.6) rotate(15deg);
-}
-
-figure:nth-child(7) img {
-    transform: scale(0.6) rotate(22.5deg);
-}
-
-figure:nth-child(8) img {
-    transform: scale(0.6) rotate(30deg);
-}
-
-figure:nth-child(9) img {
-    transform: scale(0.6) rotate(37.5deg);
-}
-
-figure:nth-child(10) img {
-    transform: scale(0.6) rotate(45deg);
-}
-
-.galleryimg {
-    object-fit: cover;
-    width: 500px;
-    height: 500px;
 }
