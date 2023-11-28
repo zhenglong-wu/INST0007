@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var links = document.querySelectorAll('.navlink');
 
-    links.forEach(function(link) {
+    links.forEach(function (link) {
         if (link.href === window.location.href) {
             link.classList.add('active');
         }
@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
