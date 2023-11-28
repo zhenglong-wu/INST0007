@@ -316,17 +316,17 @@ figure img {
     margin: 0 0 45px 0;
     color: #B1B1B1;
     font-weight: 200;
-    font-size: 18px;
 }
 
 .group {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 input {
     height: 25px;
     padding: 20px 10px 10px 5px;
+    margin-top: 15px;
     display: block;
     width: 70%;
     border: none;
@@ -419,11 +419,13 @@ a.send-btn {
     float: left;
     color: #B1B1B1;
     transition: 0.2s ease;
+    font-weight: bold;
 }
 
 a.send-btn:hover {
     color: #FAFAFA;
     cursor: pointer;
+
 }
 
 .contactmessage {
