@@ -26,7 +26,6 @@ h2 {
     color: white;
 }
 
-
 .headshot {
     background-color: none;
 }
@@ -50,7 +49,7 @@ h2 {
 
 .leftpane {
     font: inherit;
-    width: 30%;
+    width: 30vw;
     height: 100%;
     position: fixed;
     display: flex;
@@ -69,7 +68,7 @@ h2 {
     height: 100%;
     width: 70vw;
     height: 100vh;
-    margin-left: 30%;
+    margin-left: 30vw;
 }
 
 .rightpanecontent {
@@ -229,11 +228,10 @@ h2 {
 
 figure {
     position: sticky;
-    top: 250px;
+    top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 figure:nth-child(1) img {
@@ -271,5 +269,5 @@ figure:nth-child(8) img {
 figure img {
     width: 40vw;
     object-fit: contain;
-    box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 5px white;
 }
