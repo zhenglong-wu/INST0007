@@ -40,22 +40,40 @@
 
             <div class="rightpanecontent">
 
-                <div id="formdiv">
-                    <form id="form" class="topBefore">
-
-                        <input id="name" type="text" placeholder="NAME">
-                        <input id="email" type="text" placeholder="E-MAIL">
-                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-                        <input id="submit" type="submit" value="GO!">
-
-                    </form>
+                <div class="formdiv">
+                    <div class="panel panel-right">
+                        <div class="panel-content">
+                            <div class="form">
+                                <h1>Leave a message</h1>
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <label>Your name</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <label>Your email</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <label>Your subject</label>
+                                </div>
+                                <div class="group">
+                                    <textarea class="contactmessage" placeholder="Message"></textarea>
+                                    <span class="highlight"></span>
+                                </div>
+                                <a class="send-btn">Send</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
