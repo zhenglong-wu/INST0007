@@ -356,7 +356,6 @@ label {
     -webkit-transition: 0.2s ease all;
 }
 
-/* active state */
 input:focus~label,
 input:valid~label {
     top: -10px;
@@ -374,14 +373,12 @@ input:valid~label {
     opacity: 0.5;
 }
 
-/* active state */
 input:focus~.highlight {
     -webkit-animation: inputHighlighter 0.3s ease;
     -moz-animation: inputHighlighter 0.3s ease;
     animation: inputHighlighter 0.3s ease;
 }
 
-/* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
     from {
         background: #B1B1B1;
@@ -440,4 +437,36 @@ a.send-btn:hover {
 
 .contactmessage:focus::placeholder {
     color: transparent;
+}
+
+.experiencetitle {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    max-height: fit-content;
+    
+}
+
+.cvdetail {
+    margin-bottom: 1vh;
+}
+
+.cvdetail p {
+    margin: 0;
+}
+
+.cvelement {
+    padding-bottom: 5px;
+}
+
+.cvcompanyposition {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    max-height: fit-content;
+}
+
+.experiencetitle * {
+    margin: 0;
+    color: white;
 }
