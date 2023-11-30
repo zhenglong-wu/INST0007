@@ -39,7 +39,7 @@ h2 {
     font: inherit;
     display: flex;
     height: 100%;
-    width: 75vw;
+    width: 70vw;
     margin-top: 100px;
 }
 
@@ -469,4 +469,36 @@ a.send-btn:hover {
 .experiencetitle * {
     margin: 0;
     color: white;
+}
+
+.code {
+    font-family: 'Cascadia Code';
+}
+
+.import {
+    color: #bd86c0;
+    font-size: 80%;
+}
+
+.library {
+    color: #4ec9b0;
+    font-size: 80%;
+}
+
+.msfont {
+    font-family: 'Segoe Pro';
+}
+
+#excel {
+    color: #1D6F42;
+}
+
+.language {
+    color: #9cdcfe;
+    font-size: 80%;
+}
+
+.type {
+    color: #d7ba7d;
+    font-size: 80%;
 }
