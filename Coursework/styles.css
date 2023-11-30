@@ -9,7 +9,7 @@
 body,
 html {
     font-family: 'Inter';
-    font-size: 17px;
+    font-size: 1.4vw;
     scroll-behavior: smooth;
     background-color: var(--backblue);
     color: var(--text);
@@ -26,12 +26,8 @@ h2 {
     color: white;
 }
 
-.headshot {
-    background-color: none;
-}
-
 .headshotimg {
-    width: 200px;
+    width: 15vw;
     height: auto;
 }
 
@@ -49,7 +45,7 @@ h2 {
 
 .leftpane {
     font: inherit;
-    width: 30vw;
+    width: 30%;
     height: 100%;
     position: fixed;
     display: flex;
@@ -66,9 +62,9 @@ h2 {
 
 .rightpane {
     height: 100%;
-    width: 70vw;
+    width: 70%;
     height: 100vh;
-    margin-left: 30vw;
+    margin-left: 30%;
 }
 
 .rightpanecontent {
@@ -123,7 +119,7 @@ h2 {
 
 .navlink {
     font: inherit;
-    font-size: 20px;
+    font-size: 1.9vw;
     font-weight: 800;
     padding: 5px;
     text-decoration: none;
@@ -501,4 +497,24 @@ a.send-btn:hover {
 .type {
     color: #d7ba7d;
     font-size: 80%;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .leftpane {
+        height: 20%;
+        width: 100%;
+        position: sticky; 
+    }
+
+    .rightpane {
+        width: 100%;
+        margin-left: 0;
+    }
 }
