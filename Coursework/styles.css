@@ -9,7 +9,7 @@
 body,
 html {
     font-family: 'Inter';
-    font-size: 1.4vw;
+    font-size: 1.4vh;
     scroll-behavior: smooth;
     background-color: var(--backblue);
     color: var(--text);
@@ -21,13 +21,12 @@ html {
 
 h1,
 h2 {
-    font-family: inherit;
     font-weight: 800;
     color: white;
 }
 
 .headshotimg {
-    width: 15vw;
+    width: 15vh;
     height: auto;
 }
 
@@ -96,12 +95,12 @@ h2 {
 }
 
 .externallink:hover {
-    box-shadow: inset 200px 0 0 0 white;
+    box-shadow: inset 500px 0 0 0 white;
     color: var(--backblue);
 }
 
 .socialicon {
-    height: 30px;
+    height: 3vh;
     width: auto;
     padding-right: 15px;
     transition: 0.2s ease-in-out;
@@ -119,9 +118,9 @@ h2 {
 
 .navlink {
     font: inherit;
-    font-size: 1.9vw;
+    font-size: 1.9vh;
     font-weight: 800;
-    padding: 5px;
+    padding: 4px;
     text-decoration: none;
     overflow: hidden;
     position: relative;
@@ -138,7 +137,7 @@ h2 {
 
 .navlink::before {
     background-color: white;
-    height: 3px;
+    height: 0.3vh;
     bottom: 0;
     transform-origin: 100% 50%;
     transform: scaleX(0);
@@ -171,7 +170,7 @@ h2 {
 }
 
 .navlink.active {
-    box-shadow: inset 150px 0 0 0 white;
+    box-shadow: inset 300px 0 0 0 white;
     color: black;
 }
 
@@ -321,7 +320,8 @@ figure img {
 
 input {
     height: 25px;
-    padding: 20px 10px 10px 5px;
+    font-size: 1.4vh;
+    padding: 35px 10px 10px 5px;
     margin-top: 15px;
     display: block;
     width: 70%;
@@ -440,7 +440,7 @@ a.send-btn:hover {
     display: flex;
     justify-content: space-between;
     max-height: fit-content;
-    
+
 }
 
 .cvdetail {
@@ -499,7 +499,15 @@ a.send-btn:hover {
     font-size: 80%;
 }
 
-@media screen and (max-width: 900px) {
+.cvtitle {
+    width: 100%;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1200px) {
 
     .container {
         flex-direction: column;
@@ -510,11 +518,19 @@ a.send-btn:hover {
     .leftpane {
         height: 20%;
         width: 100%;
-        position: sticky; 
+        position: sticky;
     }
 
     .rightpane {
         width: 100%;
         margin-left: 0;
     }
+}
+
+.sourcesrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
 }
