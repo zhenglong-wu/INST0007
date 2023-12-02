@@ -33,6 +33,7 @@ h2 {
 .container {
     font: inherit;
     display: flex;
+    flex-direction: row;
     height: 100%;
     width: 70vw;
     margin-top: 100px;
@@ -62,7 +63,6 @@ h2 {
 .rightpane {
     height: 100%;
     width: 70%;
-    height: 100vh;
     margin-left: 30%;
 }
 
@@ -546,22 +546,26 @@ body .gist .gist-data .pl-s .pl-s1 {
     color: #a5c261
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
 
     .container {
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 100vw;
     }
 
     .leftpane {
-        height: 20%;
         width: 100%;
-        position: sticky;
+        height: 10%;
+        position: static;
     }
 
     .rightpane {
         width: 100%;
         margin-left: 0;
+    }
+
+    .rightpanecontent {
+        margin: 10%;
     }
 }
