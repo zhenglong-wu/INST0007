@@ -515,6 +515,14 @@ a.send-btn:hover {
     padding: 25px;
 }
 
+.sourcestitle {
+    width: 100%;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .sourcessection {
     display: flex;
     flex-direction: column;
