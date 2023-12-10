@@ -556,8 +556,11 @@ body .gist .gist-data .pl-s .pl-s1 {
 
     .leftpane {
         width: 100%;
-        height: 10%;
         position: static;
+    }
+    
+    #leftpanecontent {
+        height: 50%;
     }
 
     .rightpane {
@@ -567,5 +570,9 @@ body .gist .gist-data .pl-s .pl-s1 {
 
     .rightpanecontent {
         margin: 10%;
+    }
+
+    figure img {
+        width: 80vw;
     }
 }
