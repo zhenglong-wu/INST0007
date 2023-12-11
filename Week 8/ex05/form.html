@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Form</title>
+    <script src="validate.js" type="text/javascript"></script>
+</head>
+<body>
+
+<form action="/submit-form" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="postcode">Postcode:</label><br>
+    <input type="text" id="postcode" name="postcode"><br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">China</option>
+        <option value="australia">Japan</option>
+    </select><br>
+
+    <button onclick="validateForm()">Submit</button>
+    <!-- <input type="submit" value="Submit" onclick="validateForm()"> -->
+</form>
+
+</body>
+</html>
