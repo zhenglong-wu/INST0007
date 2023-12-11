@@ -518,6 +518,14 @@ a.send-btn:hover {
     padding: 25px;
 }
 
+.sourcestitle {
+    width: 100%;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .sourcessection {
     display: flex;
     flex-direction: column;
@@ -559,8 +567,11 @@ body .gist .gist-data .pl-s .pl-s1 {
 
     .leftpane {
         width: 100%;
-        height: 10%;
         position: static;
+    }
+    
+    #leftpanecontent {
+        height: 50%;
     }
 
     .rightpane {
@@ -570,5 +581,9 @@ body .gist .gist-data .pl-s .pl-s1 {
 
     .rightpanecontent {
         margin: 10%;
+    }
+
+    figure img {
+        width: 80vw;
     }
 }
