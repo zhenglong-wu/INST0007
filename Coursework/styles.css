@@ -526,6 +526,10 @@ a.send-btn:hover {
     justify-content: space-between;
 }
 
+.sourcestitle h1, h4 {
+    margin: 0;
+}
+
 .sourcessection {
     display: flex;
     flex-direction: column;
